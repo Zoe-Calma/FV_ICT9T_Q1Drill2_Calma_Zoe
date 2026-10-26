@@ -3,94 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drill 2</title>
+    <title>Q2Drill2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body{
-            background-color: rgb(245, 196, 204);
-            margin: 0;
-            min-height: auto;
-            font-family: 'Times New Roman', Times, serif;
-        }
-        section{
-            display: block;
-            margin: auto;
-            width: 600px;
-            height: auto;
-            background-color: rgb(229, 131, 160);
-            box-shadow: 0px 3px 10px rgb(114, 67, 75);
-            padding: 15px;
-        }
-        header{
-            text-align: center;
-        }
-        img{
-            height: 300px;
-            width: 300px;
-        }
-        select, input[type=submit], textarea{
-            width: 100%;
-            border-radius: 5px;
-        }
-    </style>
+footer {
+  text-align: center;
+  padding: 4px;
+  background-color: grey;
+  color: white;
+}
+</style>
+
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSffsm2n4xf-Ake_7FjbIElN4zOydP5HGxF899j-8bZJQ&s=10" alt="obmclogo" class="rounded-circle" style="height: 60px; width: 60px;"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About Us</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="#enroll">Enroll</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact Us</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <a href="https://obmontessori.orangeapps.ph/landing/obmontessori/"><button class="btn btn-primary" type="button">My Portal</button></a>
+      </form>
+    </div>
+  </div>
+</nav>
+
     <header>
-        <h1>Rate a Movie</h1>
-            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Mean_Girls_Musical_Logo_%282018%29.png/330px-Mean_Girls_Musical_Logo_%282018%29.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail">
-            <p>Review my personal favorite female led movies!</p>
-    </header>
-    <br>
+    <div class="container-fluid m-0 p-0">
+        <div class="row">
+            <div class="col">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0MHf6JyU9dNitDHqUonBEKDA9oV7AcqOSUer43aEJ_A&s=10" alt="obfv" class="img-fluid w-100 d-block">
+            </div>
+        </div>
+    </div>
+   </header>
+   <div class="container">
+    <div class="row">
+        <div class="col-lg-3"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtlS5ke4aP-78LRpsjS1X085scy0FMni4UZ9MO3GvtZA&s=10" style="height: 200px; width: 200px;"></div>
+        <div class="col-lg-2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0MHf6JyU9dNitDHqUonBEKDA9oV7AcqOSUer43aEJ_A&s=10" style="height: 200px; width: 200px;"></div>
+        <div class="col-lg-2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYQgfUiNfgZbhjBkacJFhf0ryHoovcks2JQM1uG8aRMg&s" style="height: 200px; width: 200px;"></div>
+        <div class="col-lg-3"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5vnYGIhZNmAtHnzIhAnp8kwYKcOSz732se2s8vwfmTA&s" style="height: 200px; width: 200px;"></div>
+        <div class="col-lg-2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3lIjYarHc9KeUH_UIvdChGQBAmv0__TtRzlBxExc8aQ&s=10" style="height: 200px; width: 200px;"></div>
+    </div>
+   </div>
 
-    <section>
-        <form>
-            <label for="movie">Select a movie</label>
-            <select id="movie" name="movie">
-                <option value="movie1">Mean Girls</option>
-                <option value="movie2">Clueless</option>
-                <option value="movie3">The Devil Wears Prada</option>
-                <option value="movie4">Legally Blonde</option>
-                <option value="movie5">Confessions of a Teenage Drama Queen</option>
-            </select>
-            <br><br>
+   <br>
 
-            <label for="Genre">Genres</label>
-            <br>
-            <input type="checkbox" id="Genre1" name="Genre1" value="Genre">
-            <label for="Genre1">Drama</label>
-            <input type="checkbox" id="Genre2" name="Genre2" value="Genre">
-            <label for="Genre2">Romance</label>
-            <input type="checkbox" id="Genre3" name="Genre3" value="Genre">
-            <label for="Genre3">Comedy</label>
-            <input type="checkbox" id="Genre4" name="Genre4" value="Genre">
-            <label for="Genre4">Coming-of-Age</label>
-            <input type="checkbox" id="Genre5" name="Genre5" value="Genre">
-            <label for="Genre5">Satire</label>
+   <footer>
+  <p>© 2026 O.B. Montessori Center. All Rights Reserved. </p>
+</footer>
 
-            <br><br>
-            <label for="rating">Rating!</label>
-            <br>
-            <input type="radio" id="rate1" name="rating" value="rate1">
-            <label for="rate1">🌺</label>
-            <input type="radio" id="rate2" name="rating" value="rate2">
-            <label for="rate2">🌺🌺</label>
-            <input type="radio" id="rate3" name="rating" value="rate3">
-            <label for="rate3">🌺🌺🌺</label>
-            <input type="radio" id="rate4" name="rating" value="rate4">
-            <label for="rate4">🌺🌺🌺🌺</label>
-            <input type="radio" id="rate5" name="rating" value="rate5">
-            <label for="rate5">🌺🌺🌺🌺🌺</label>
-            <br><br>
-
-            <textarea id="review" name="review" cols="40" rows="4" placeholder="Write review here..."></textarea>
-
-            <br><br>
-
-            <input type="submit" id="submit" name="submit" value="Submit a Review">
-            <br>
-            For more review tips, click <a href="https://www.nyfa.edu/student-resources/9-tips-for-writing-a-film-review/"> here!</a>
-            </form>
-            </section>
-        </p>
-    </h1>
 </body>
 </html>
